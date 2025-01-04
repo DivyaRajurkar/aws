@@ -1,13 +1,21 @@
-Q1).what is port number?
+#  Understanding Port Numbers in AWS
+
+## Q1) What is a Port Number?
+
 In AWS, a **port number** is a communication endpoint that allows specific types of traffic to reach services or applications hosted on AWS resources, such as EC2 instances or RDS databases. Port numbers help identify the type of service running and control access through security group rules.
-or
-A port number is a numerical identifier assigned to a specific process or service on a computer or server to facilitate communication over a network. It helps direct incoming and outgoing data to the correct application or service.
-or
-A port number is like a door that helps a computer or server decide where to send or receive data. Each type of service or application has its own port number.
+
+Alternatively:
+
+- A **port number** is a numerical identifier assigned to a specific process or service on a computer or server to facilitate communication over a network. It helps direct incoming and outgoing data to the correct application or service.
+
+- A **port number** is like a door that helps a computer or server decide where to send or receive data. Each type of service or application has its own port number.
+
 ### Examples of AWS Port Numbers:
+
 1. **Port 22**: Used for SSH access to EC2 instances.  
 2. **Port 80**: Used for HTTP traffic to web servers.  
 3. **Port 443**: Used for HTTPS traffic to secure web servers.  
 4. **Port 3306**: Used for connecting to a MySQL database on RDS.  
 
-These ports are managed in AWS Security Groups to allow or deny specific traffic.
+These ports are managed in AWS Security Groups to allow or deny specific traffic, ensuring secure and efficient communication.
+
