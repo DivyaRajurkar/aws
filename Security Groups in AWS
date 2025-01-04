@@ -1,0 +1,22 @@
+# Security Groups in AWS
+
+## Q2) What is a Security Group?
+
+A **security group** in AWS acts as a virtual firewall for your EC2 instances and other resources. It controls inbound and outbound traffic to ensure secure communication.
+
+### Key Points:
+1. **Inbound Rules**: Define the traffic allowed **into** the resource.  
+2. **Outbound Rules**: Define the traffic allowed **out** of the resource.  
+3. **Stateful**: If you allow traffic in one direction, the response traffic is automatically allowed in the opposite direction.  
+4. **Assigned to Resources**: You can attach one or more security groups to EC2 instances, RDS databases, or other services.  
+
+### Example in Day-to-Day Life:
+Imagine your house:  
+1. **Inbound Rules**: You allow friends to enter through the main door (specific people).  
+2. **Outbound Rules**: You allow family members to leave for work (specific people leaving).  
+3. **Stateful**: If a friend is allowed in, they are also allowed to leave without needing extra permission.
+
+In AWS:
+- You allow **port 22** (SSH) for trusted people (developers) to log in.  
+- You allow **port 80** (HTTP) for anyone to view your website.  
+- Only the rules you set determine who can access your resources or services, keeping them safe.
