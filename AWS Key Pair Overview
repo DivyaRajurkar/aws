@@ -1,0 +1,25 @@
+# AWS Key Pair Overview
+
+## What is a Key Pair?
+
+A **key pair** in AWS is a security credential used to securely log in to your EC2 instances. It consists of two parts:
+
+1. **Public Key**: Stored on the EC2 instance by AWS.
+2. **Private Key**: Downloaded and kept by the user to authenticate and access the instance.
+
+## How It Works
+
+- The **public key** stays on the server (EC2 instance).
+- The **private key** is used by the user to establish a secure connection via SSH.
+- Only someone with the correct private key can access the instance.
+
+## Example
+
+When launching an EC2 instance, you create or select a key pair. You use the private key file (e.g., `my-key.pem`) to connect to the instance securely.
+
+## Important Notes
+
+- Keep the private key safe; AWS cannot regenerate it for you.
+- If you lose the private key, you'll lose SSH access to the instance unless you create a workaround (e.g., creating a new key pair and adding its public key to the instance).
+
+This ensures secure access to your AWS resources.
